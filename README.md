@@ -2,7 +2,7 @@
 
 Portfolio template for Sorelle, a fictional UI/UX designer and developer: bright case studies that link to six live demo sites for families, learners, and makers, plus notes on honest copy, games that stop, and drawings made to measure.
 
-**Demo live:** https://portfolio-sorelle.vercel.app
+**Demo live:** https://portfolio-sorelle.pintuweb.id
 
 ![Tangkapan layar](public/og.jpg)
 
@@ -21,12 +21,12 @@ Persona fiktif Sorelle, desainer UI/UX. Bersih dan terang dengan angka bernomor 
 
 | Studi kasus | Demo live |
 | --- | --- |
-| Beranda | https://properti-beranda.vercel.app |
-| EduPlay | https://landing-eduplay.vercel.app |
-| Woodora | https://landing-woodora.vercel.app |
-| Elevinar | https://landing-elevinar.vercel.app |
-| NextTalks | https://landing-nexttalks.vercel.app |
-| Kayla’s birthday | https://undangan-birthday.vercel.app |
+| Beranda | https://properti-beranda.pintuweb.id |
+| EduPlay | https://landing-eduplay.pintuweb.id |
+| Woodora | https://landing-woodora.pintuweb.id |
+| Elevinar | https://landing-elevinar.pintuweb.id |
+| NextTalks | https://landing-nexttalks.pintuweb.id |
+| Kayla’s birthday | https://undangan-birthday.pintuweb.id |
 
 ## Halaman
 

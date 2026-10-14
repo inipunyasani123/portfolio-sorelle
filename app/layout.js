@@ -11,7 +11,7 @@ const syne = Syne({ variable: "--font-syne", subsets: ["latin"], weight: ["600",
 const __jsonld = {"@context":"https://schema.org","@type":"WebSite","name":"Sorelle — UI/UX Designer & Developer","description":"Portfolio template for Sorelle, a fictional UI/UX designer and developer: bright case studies that link to six live demo sites for families, learners, and makers, plus notes on honest copy, games that stop, and drawings made to measure.","inLanguage":"en"};
 
 export const metadata = {
-  metadataBase: new URL("https://portfolio-sorelle.vercel.app"),
+  metadataBase: new URL("https://portfolio-sorelle.pintuweb.id"),
   title: { default: "Sorelle — UI/UX Designer & Developer", template: "%s — Sorelle" },
   description: "Portfolio template for Sorelle, a fictional UI/UX designer and developer: bright case studies that link to six live demo sites for families, learners, and makers, plus notes on honest copy, games that stop, and drawings made to measure.",
   applicationName: "Sorelle",
@@ -19,11 +19,11 @@ export const metadata = {
   authors: [{ name: "Sorelle" }],
   creator: "Sorelle",
   publisher: "Sorelle",
-  alternates: { canonical: "https://portfolio-sorelle.vercel.app" },
+  alternates: { canonical: "https://portfolio-sorelle.pintuweb.id" },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://portfolio-sorelle.vercel.app",
+    url: "https://portfolio-sorelle.pintuweb.id",
     siteName: "Sorelle",
     title: "Sorelle — UI/UX Designer & Developer",
     description: "Portfolio template for Sorelle, a fictional UI/UX designer and developer: bright case studies that link to six live demo sites for families, learners, and makers, plus notes on honest copy, games that stop, and drawings made to measure.",
