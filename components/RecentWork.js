@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import Reveal from './ui/Reveal';
 import { ArrowUpRight } from 'lucide-react';
 import { projects, stats } from '@/lib/data';
 
@@ -14,13 +14,7 @@ export default function RecentWork() {
 
       <div className="relative z-10 container mx-auto px-4">
         {/* Judul dan statistik */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-6"
-        >
+        <Reveal className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-6">
           <div className="flex items-center">
             <div className="w-16 h-0.5 bg-gray-300 mr-4" />
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 flex items-center tracking-tight leading-snug">
@@ -38,18 +32,12 @@ export default function RecentWork() {
               </div>
             ))}
           </dl>
-        </motion.div>
+        </Reveal>
 
         {/* Grid proyek */}
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {projects.slice(0, 3).map((project, index) => (
-            <motion.div
-              key={project.slug}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
+            <Reveal key={project.slug} delay={index * 0.1}>
               <Link
                 href={`/work/${project.slug}`}
                 className="group relative block overflow-hidden rounded-xl bg-gray-100 shadow-md hover:shadow-xl transition-all duration-500"
@@ -62,32 +50,26 @@ export default function RecentWork() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="w-full h-60 object-cover object-top transform transition-transform duration-700 group-hover:scale-105"
                 />
-                <span className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-gradient-to-t from-black/80 to-transparent p-4 pt-12">
+                <span className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-gradient-to-t from-black/90 via-black/70 to-transparent p-4 pt-14">
                   <span className="text-white text-xl font-semibold">{project.title}</span>
                   <span className="bg-white text-blue-600 rounded-full p-1 ml-2" aria-hidden="true">
                     <ArrowUpRight className="w-5 h-5" />
                   </span>
                 </span>
               </Link>
-            </motion.div>
+            </Reveal>
           ))}
         </div>
 
         {/* Tombol semua proyek */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-center mt-12"
-        >
+        <Reveal delay={0.3} className="text-center mt-12">
           <Link
             href="/work"
             className="inline-flex items-center border border-blue-600 text-blue-600 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300 whitespace-nowrap"
           >
             View all projects
           </Link>
-        </motion.div>
+        </Reveal>
       </div>
     </section>
   );

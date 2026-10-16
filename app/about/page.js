@@ -4,8 +4,9 @@ import { ArrowRight } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import Reveal from '@/components/ui/Reveal';
 import { profile, skills, experience, education } from '@/lib/data';
+import { pageMeta } from '@/lib/seo';
 
-export const metadata = { title: 'About' };
+export const metadata = pageMeta({ title: 'About', description: "About Sorelle, a fictional UI/UX designer and developer: warm, honest websites for families, learners, and makers, and how they get built.", path: '/about' });
 
 export default function AboutPage() {
   return (

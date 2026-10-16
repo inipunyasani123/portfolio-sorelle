@@ -3,8 +3,9 @@ import { ArrowUpRight } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import Reveal from '@/components/ui/Reveal';
 import { posts } from '@/lib/data';
+import { pageMeta } from '@/lib/seo';
 
-export const metadata = { title: 'Blog' };
+export const metadata = pageMeta({ title: 'Blog', description: "Notes by Sorelle on writing the downside first, a learning game that stops itself, and drawings made from a customer’s tape measure.", path: '/blog' });
 
 export default function BlogPage() {
   return (

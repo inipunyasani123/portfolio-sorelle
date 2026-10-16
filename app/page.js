@@ -3,7 +3,6 @@ import Hero from '@/components/Hero'
 import RecentWork from '@/components/RecentWork'
 import Brands from '@/components/Brands'
 import Services from '@/components/Services'
-import Portfolio from '@/components/Portfolio'
 
 export default function Home() {
   return (
@@ -12,7 +11,6 @@ export default function Home() {
       <RecentWork />
       <Brands />
       <Services />
-      <Portfolio />
     </main>
   )
 }

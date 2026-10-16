@@ -1,7 +1,7 @@
 'use client';
 // Dulunya logo merek sungguhan; kini untuk siapa proyek-proyek demo ini dibuat (persona fiktif).
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import Reveal from './ui/Reveal';
 import { projects } from '@/lib/data';
 
 export default function Brands() {
@@ -12,13 +12,7 @@ export default function Brands() {
       <div className="absolute -bottom-20 -right-32 w-96 h-96 bg-blue-200 rounded-full opacity-20 blur-3xl pointer-events-none z-0" />
 
       <div className="relative z-10 container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="flex flex-col md:flex-row justify-between items-center mb-16 gap-10"
-        >
+        <Reveal className="flex flex-col md:flex-row justify-between items-center mb-16 gap-10">
           <div className="max-w-xl">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight mb-4">
               Made for families, learners, and <span className="text-purple-700">makers</span>.
@@ -28,19 +22,14 @@ export default function Brands() {
             </p>
             <Link
               href="/work"
-              className="inline-block text-sm text-purple-700 hover:text-purple-900 font-medium underline underline-offset-4 transition"
+              className="inline-flex min-h-11 items-center text-sm text-purple-700 hover:text-purple-900 font-medium underline underline-offset-4 transition"
             >
               See every project →
             </Link>
           </div>
 
           {/* Daftar nama proyek */}
-          <motion.ul
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="grid grid-cols-2 gap-x-12 gap-y-6 md:gap-x-16"
+          <ul className="grid grid-cols-2 gap-x-12 gap-y-6 md:gap-x-16"
           >
             {projects.map((p) => (
               <li key={p.slug}>
@@ -49,8 +38,8 @@ export default function Brands() {
                 </Link>
               </li>
             ))}
-          </motion.ul>
-        </motion.div>
+          </ul>
+        </Reveal>
       </div>
     </section>
   );

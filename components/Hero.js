@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import { Rocket } from 'lucide-react';
 import { profile, projects } from '@/lib/data';
 
@@ -9,10 +8,10 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative bg-gradient-to-b from-gray-50 to-white pt-32 pb-24 sm:pb-32 overflow-hidden"
+      className="relative bg-gradient-to-b from-gray-50 to-white pt-16 pb-16 sm:pt-24 sm:pb-24 md:pt-32 md:pb-32 overflow-hidden"
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/5 backdrop-blur-sm z-0" />
+      <div className="absolute inset-0 bg-black/5 z-0" aria-hidden="true" />
 
       {/* Bentuk abstrak */}
       <div className="animate-blob absolute top-10 left-[-50px] w-[300px] h-[300px] bg-blue-200 opacity-30 rounded-full blur-3xl z-0" />
@@ -22,13 +21,7 @@ export default function Hero() {
       {/* Konten utama */}
       <div className="relative z-10 container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12">
         {/* Kiri: teks */}
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="w-full md:w-1/2 text-center md:text-left"
-        >
+        <div className="hero-rise w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
             Warm websites that tell the <span className="text-blue-600">whole</span> story.
           </h1>
@@ -38,13 +31,13 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 sm:gap-6">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 hover:scale-105 transition"
+              className="inline-flex min-h-12 items-center justify-center px-6 text-lg font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 hover:scale-105 transition"
             >
               <Rocket className="w-5 h-5 mr-2" aria-hidden="true" />
               Start a project
             </Link>
 
-            <Link href="/work" className="group flex items-center gap-3">
+            <Link href="/work" className="group flex min-h-12 items-center gap-3">
               <span className="flex -space-x-3" aria-hidden="true">
                 {projects.slice(0, 4).map((p) => (
                   <span key={p.slug} className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-white bg-gray-100 shadow-sm">
@@ -55,26 +48,20 @@ export default function Hero() {
               <span className="text-sm text-gray-600 group-hover:text-blue-600">{projects.length} live projects to open</span>
             </Link>
           </div>
-        </motion.div>
+        </div>
 
         {/* Kanan: foto */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-          className="w-full md:w-1/2 flex justify-center md:justify-end"
-        >
+        <div className="hero-rise hero-rise-late w-full md:w-1/2 flex justify-center md:justify-end">
           <Image
             src={profile.avatar}
             alt=""
             width={560}
             height={700}
-            priority
+            priority fetchPriority="high"
             sizes="(max-width: 768px) 90vw, 512px"
-            className="rounded-2xl shadow-2xl object-cover w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg transform hover:scale-105 transition duration-500"
+            className="aspect-[4/3] rounded-2xl shadow-2xl object-cover w-full max-w-sm sm:aspect-auto md:max-w-md lg:max-w-lg transform hover:scale-105 transition duration-500"
           />
-        </motion.div>
+        </div>
       </div>
     </section>
   );

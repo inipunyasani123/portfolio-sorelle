@@ -4,37 +4,28 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
 import ThemeToggle from "@/components/ThemeToggle";
+import { SITE_URL, SITE_NAME, SITE_TITLE, SITE_DESC, pageMeta } from "@/lib/seo";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const syne = Syne({ variable: "--font-syne", subsets: ["latin"], weight: ["600", "700", "800"] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"WebSite","name":"Sorelle — UI/UX Designer & Developer","description":"Portfolio template for Sorelle, a fictional UI/UX designer and developer: bright case studies that link to six live demo sites for families, learners, and makers, plus notes on honest copy, games that stop, and drawings made to measure.","inLanguage":"en"};
+const __jsonld = {
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "WebSite", "@id": `${SITE_URL}/#website`, "url": SITE_URL, "name": SITE_TITLE, "description": SITE_DESC, "inLanguage": "en", "author": { "@id": `${SITE_URL}/#person` } },
+    { "@type": "Person", "@id": `${SITE_URL}/#person`, "name": "Sorelle", "jobTitle": "UI/UX Designer & Developer", "description": "A fictional persona for this portfolio template.", "url": SITE_URL },
+  ],
+};
 
 export const metadata = {
-  metadataBase: new URL("https://portfolio-sorelle.pintuweb.id"),
-  title: { default: "Sorelle — UI/UX Designer & Developer", template: "%s — Sorelle" },
-  description: "Portfolio template for Sorelle, a fictional UI/UX designer and developer: bright case studies that link to six live demo sites for families, learners, and makers, plus notes on honest copy, games that stop, and drawings made to measure.",
-  applicationName: "Sorelle",
+  metadataBase: new URL(SITE_URL),
+  title: { default: SITE_TITLE, template: `%s — ${SITE_NAME}` },
+  applicationName: SITE_NAME,
   keywords: ["UI/UX designer", "developer", "portfolio", "digital experience", "interface design"],
-  authors: [{ name: "Sorelle" }],
-  creator: "Sorelle",
-  publisher: "Sorelle",
-  alternates: { canonical: "https://portfolio-sorelle.pintuweb.id" },
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://portfolio-sorelle.pintuweb.id",
-    siteName: "Sorelle",
-    title: "Sorelle — UI/UX Designer & Developer",
-    description: "Portfolio template for Sorelle, a fictional UI/UX designer and developer: bright case studies that link to six live demo sites for families, learners, and makers, plus notes on honest copy, games that stop, and drawings made to measure.",
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Sorelle — UI/UX Designer & Developer" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Sorelle — UI/UX Designer & Developer",
-    description: "Portfolio template for Sorelle, a fictional UI/UX designer and developer: bright case studies that link to six live demo sites for families, learners, and makers, plus notes on honest copy, games that stop, and drawings made to measure.",
-    images: ["/og.jpg"],
-  },
+  authors: [{ name: SITE_NAME }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  ...pageMeta({ description: SITE_DESC, path: '/' }),
   robots: {
     index: true,
     follow: true,
@@ -46,9 +37,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${syne.variable}`} suppressHydrationWarning>
       <body className="bg-white text-gray-900 antialiased">
+        <a href="#konten" className="skip-link">Skip to content</a>
         <ThemeProvider>
           <Navbar />
-          {children}
+          <div id="konten">{children}</div>
           <Footer />
           <ThemeToggle />
         </ThemeProvider>
