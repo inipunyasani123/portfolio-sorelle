@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+  <defs>
+  <linearGradient id="sa-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef2ff"/></linearGradient>
+  <radialGradient id="sa-skin" cx="0.38" cy="0.35" r="0.8"><stop offset="0" stop-color="#e2b08a"/><stop offset="0.6" stop-color="#cf9670"/><stop offset="1" stop-color="#b37853"/></radialGradient>
+  <linearGradient id="sa-neck" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9e6744"/><stop offset="1" stop-color="#c28a63"/></linearGradient>
+  <linearGradient id="sa-hair" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a3826"/><stop offset="0.5" stop-color="#3a2419"/><stop offset="1" stop-color="#25160f"/></linearGradient>
+  <linearGradient id="sa-hairhi" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a5a3c" stop-opacity="0"/><stop offset="0.5" stop-color="#8a5a3c" stop-opacity=".75"/><stop offset="1" stop-color="#8a5a3c" stop-opacity="0"/></linearGradient>
+  <linearGradient id="sa-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient>
+  <linearGradient id="sa-card" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffdf8"/><stop offset="1" stop-color="#efe7da"/></linearGradient>
+  <radialGradient id="sa-blush" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#f08f86" stop-opacity=".55"/><stop offset="1" stop-color="#f08f86" stop-opacity="0"/></radialGradient>
+  <filter id="sa-soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="40"/></filter>
+  <filter id="sa-sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#1e3a8a" flood-opacity=".18"/></filter>
+  <clipPath id="sa-face"><path d="M 0 -196 C 84 -196 136 -136 136 -54 C 136 22 126 74 100 112 C 74 148 40 168 0 168 C -40 168 -74 148 -100 112 C -126 74 -136 22 -136 -54 C -136 -136 -84 -196 0 -196 Z"/></clipPath>
+    <linearGradient id="sa-lid" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#cbd5e1"/></linearGradient>
+    <linearGradient id="sa-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9dccb"/><stop offset="1" stop-color="#d6c3aa"/></linearGradient>
+    <linearGradient id="sa-leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#86efac"/><stop offset="1" stop-color="#16a34a"/></linearGradient>
+    <linearGradient id="sa-mug" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#sa-bg)"/>
+  <defs><radialGradient id="sa-bl1"><stop offset="0" stop-color="#bfdbfe" stop-opacity="1"/><stop offset=".6" stop-color="#bfdbfe" stop-opacity="0.5"/><stop offset="1" stop-color="#bfdbfe" stop-opacity="0"/></radialGradient><radialGradient id="sa-bl2"><stop offset="0" stop-color="#ddd6fe" stop-opacity="1"/><stop offset=".6" stop-color="#ddd6fe" stop-opacity="0.5"/><stop offset="1" stop-color="#ddd6fe" stop-opacity="0"/></radialGradient><radialGradient id="sa-bl3"><stop offset="0" stop-color="#fbcfe8" stop-opacity="1"/><stop offset=".6" stop-color="#fbcfe8" stop-opacity="0.5"/><stop offset="1" stop-color="#fbcfe8" stop-opacity="0"/></radialGradient></defs>
+    <circle cx="264" cy="360" r="480" fill="url(#sa-bl1)"/>
+    <circle cx="983.9999999999999" cy="930" r="456" fill="url(#sa-bl2)"/>
+    <circle cx="840" cy="240" r="312" fill="url(#sa-bl3)"/>
+  <!-- rak dinding: bingkai gambar rumah + vas -->
+  <rect x="120" y="360" width="300" height="18" rx="9" fill="#d6c3aa"/>
+  <g filter="url(#sa-sh)">
+    <rect x="150" y="150" width="190" height="210" rx="16" fill="#fffdf8"/>
+    <path d="M 245 205 L 300 252 L 300 320 L 190 320 L 190 252 Z" fill="#fde68a"/>
+    <path d="M 176 262 L 245 200 L 314 262" stroke="#f97316" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="230" y="272" width="30" height="48" rx="4" fill="#60a5fa"/>
+  </g>
+  <path d="M 370 360 C 360 320 370 290 384 280 C 398 290 408 320 398 360 Z" fill="#c4b5fd"/>
+  <path d="M 384 280 C 378 240 360 220 340 214 M 384 280 C 392 236 410 214 430 206" stroke="#16a34a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Sorelle -->
+  <g filter="url(#sa-sh)"><g transform="translate(600 680) scale(1.06)">
+  <g>
+    <!-- rambut belakang panjang bergelombang -->
+    <path d="M -146 -96 C -186 -20 -150 40 -180 110 C -206 170 -162 220 -196 284 C -214 320 -196 352 -232 372 C -170 392 -116 352 -96 300 C -70 334 -30 342 0 334 C 30 342 70 334 96 300 C 116 352 170 392 232 372 C 196 352 214 320 196 284 C 162 220 206 170 180 110 C 150 40 186 -20 146 -96 C 116 -206 -116 -206 -146 -96 Z" fill="url(#sa-hair)"/>
+    <!-- leher -->
+    <path d="M -50 100 L -54 236 Q 0 262 54 236 L 50 100 Z" fill="url(#sa-neck)"/>
+    <!-- atasan biru berkerah V + kardigan krem -->
+    <path d="M -58 206 C -146 228 -276 248 -336 300 C -400 356 -414 450 -424 820 L 424 820 C 414 450 400 356 336 300 C 276 248 146 228 58 206 Z" fill="url(#sa-top)"/>
+    <path d="M -58 206 L 0 330 L 58 206 Q 0 236 -58 206 Z" fill="url(#sa-neck)"/>
+    <path d="M -58 206 C -146 228 -276 248 -336 300 C -400 356 -414 450 -424 820 L -150 820 C -150 600 -120 420 -40 300 Z" fill="url(#sa-card)"/>
+    <path d="M 58 206 C 146 228 276 248 336 300 C 400 356 414 450 424 820 L 150 820 C 150 600 120 420 40 300 Z" fill="url(#sa-card)"/>
+    <path d="M 58 206 C 146 228 276 248 336 300 C 400 356 414 450 424 820 L 330 820 C 330 560 260 360 58 206 Z" fill="#d9cdbb" opacity=".55"/>
+    <circle cx="-118" cy="470" r="9" fill="#cbbba3"/><circle cx="-128" cy="560" r="9" fill="#cbbba3"/>
+    <!-- helai rambut yang jatuh di bahu -->
+    <path d="M -140 30 C -176 100 -136 160 -170 228 C -196 280 -170 330 -196 366 C -150 360 -126 320 -130 270 C -134 226 -112 190 -118 140 C -122 100 -110 60 -112 30 Z" fill="url(#sa-hair)"/>
+    <path d="M 140 30 C 176 100 136 160 170 228 C 196 280 170 330 196 366 C 150 360 126 320 130 270 C 134 226 112 190 118 140 C 122 100 110 60 112 30 Z" fill="url(#sa-hair)"/>
+    <!-- wajah -->
+    <path d="M 0 -196 C 84 -196 136 -136 136 -54 C 136 22 126 74 100 112 C 74 148 40 168 0 168 C -40 168 -74 148 -100 112 C -126 74 -136 22 -136 -54 C -136 -136 -84 -196 0 -196 Z" fill="url(#sa-skin)"/>
+    <g clip-path="url(#sa-face)">
+      <ellipse cx="-74" cy="60" rx="46" ry="30" fill="url(#sa-blush)"/>
+      <ellipse cx="78" cy="60" rx="46" ry="30" fill="url(#sa-blush)"/>
+    </g>
+    <!-- alis, mata berbulu mata, hidung, bibir -->
+    <path d="M -86 -50 C -70 -62 -48 -64 -32 -56" stroke="#3a2419" stroke-width="7.5" fill="none" stroke-linecap="round"/>
+    <path d="M 32 -56 C 48 -64 70 -62 86 -50" stroke="#3a2419" stroke-width="7.5" fill="none" stroke-linecap="round"/>
+    <path d="M -80 -6 C -68 -20 -46 -20 -34 -8 C -46 6 -68 6 -80 -6 Z" fill="#2a1a12"/>
+    <path d="M 34 -8 C 46 -20 68 -20 80 -6 C 68 6 46 6 34 -8 Z" fill="#2a1a12"/>
+    <path d="M -86 -4 C -72 -24 -44 -24 -30 -10 M 30 -10 C 44 -24 72 -24 86 -4" stroke="#2a1a12" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <circle cx="-54" cy="-12" r="4" fill="#fff" opacity=".9"/><circle cx="62" cy="-12" r="4" fill="#fff" opacity=".9"/>
+    <path d="M 2 0 C 6 20 16 36 14 50 C 10 58 0 58 -8 54" stroke="#a46b47" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M -36 86 C -20 86 -8 88 0 92 C 8 88 20 86 36 86 C 26 116 -26 116 -36 86 Z" fill="#c4645f"/>
+    <path d="M -36 86 C -14 100 14 100 36 86" stroke="#9c4744" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <path d="M -24 94 C -8 100 8 100 24 94 L 22 98 C 8 103 -8 103 -22 98 Z" fill="#fff" opacity=".9"/>
+    <!-- poni belah samping + jepit -->
+    <path d="M 30 -208 C -64 -208 -132 -150 -142 -58 C -146 -16 -140 22 -128 52 L -110 42 C -116 2 -112 -40 -96 -80 C -80 -110 -42 -130 10 -134 C 40 -136 72 -124 92 -104 C 108 -86 118 -64 120 -40 C 122 0 118 30 112 46 L 130 52 C 142 20 148 -20 146 -60 C 140 -150 100 -208 30 -208 Z" fill="url(#sa-hair)"/>
+    <path d="M -104 -130 C -60 -176 20 -190 84 -160" stroke="url(#sa-hairhi)" stroke-width="14" fill="none" stroke-linecap="round"/><path d="M -170 150 C -150 200 -180 240 -170 290" stroke="#8a5a3c" stroke-opacity=".45" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M 170 150 C 150 200 180 240 170 290" stroke="#8a5a3c" stroke-opacity=".3" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <rect x="64" y="-150" width="58" height="17" rx="8.5" fill="#93c5fd" transform="rotate(32 93 -141)"/>
+  </g></g></g>
+  <!-- meja -->
+  <rect x="0" y="1250" width="1200" height="250" fill="url(#sa-desk)"/>
+  <rect x="0" y="1250" width="1200" height="10" fill="#f3ebe0"/>
+  <g filter="url(#sa-sh)">
+    <!-- laptop -->
+    <path d="M 390 990 Q 390 974 406 974 L 794 974 Q 810 974 810 990 L 824 1248 L 376 1248 Z" fill="url(#sa-lid)"/>
+    <path d="M 340 1248 L 860 1248 L 876 1266 Q 600 1278 324 1266 Z" fill="#94a3b8"/>
+    <path d="M 586 1100 C 586 1086 600 1080 600 1092 C 600 1080 614 1086 614 1100 C 614 1112 600 1120 600 1124 C 600 1120 586 1112 586 1100 Z" fill="#93c5fd"/>
+    <!-- tumpukan buku -->
+    <rect x="70" y="1176" width="250" height="38" rx="8" fill="#a78bfa"/>
+    <rect x="90" y="1138" width="220" height="38" rx="8" fill="#fbcfe8"/>
+    <rect x="60" y="1214" width="270" height="36" rx="8" fill="#60a5fa"/>
+    <!-- cangkir biru -->
+    <path d="M 880 1150 L 970 1150 L 963 1250 L 887 1250 Z" fill="url(#sa-mug)"/>
+    <path d="M 966 1170 q 38 0 34 32 q -4 28 -38 26" stroke="#2563eb" stroke-width="11" fill="none"/>
+    <!-- buku sketsa + pensil di depan -->
+    <g transform="translate(600 1380) rotate(-4)"><rect x="-170" y="-60" width="340" height="150" rx="14" fill="#fffdf8"/><path d="M -130 -20 h 160 M -130 10 h 220 M -130 40 h 120" stroke="#bfdbfe" stroke-width="10" stroke-linecap="round"/></g>
+    <rect x="760" y="1360" width="220" height="18" rx="9" fill="#fbbf24" transform="rotate(14 870 1369)"/>
+  </g>
+  <!-- tanaman pot -->
+  <g transform="translate(1110 1250)">
+    <path d="M -10 -90 C -60 -150 -70 -230 -40 -290 C -4 -230 4 -150 -10 -90 Z" fill="url(#sa-leaf)"/>
+    <path d="M 0 -90 C 30 -170 80 -210 120 -220 C 104 -150 60 -110 0 -90 Z" fill="url(#sa-leaf)"/>
+    <path d="M -50 -96 L 50 -96 L 40 0 L -40 0 Z" fill="#fdba74"/>
+  </g>
+</svg>

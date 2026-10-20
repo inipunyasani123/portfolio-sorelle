@@ -50,16 +50,16 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Kanan: foto */}
+        {/* Kanan: potret ilustrasi */}
         <div className="hero-rise hero-rise-late w-full md:w-1/2 flex justify-center md:justify-end">
           <Image
             src={profile.avatar}
-            alt=""
+            alt={profile.avatarAlt}
             width={560}
             height={700}
             priority fetchPriority="high"
             sizes="(max-width: 768px) 90vw, 512px"
-            className="aspect-[4/3] rounded-2xl shadow-2xl object-cover w-full max-w-sm sm:aspect-auto md:max-w-md lg:max-w-lg transform hover:scale-105 transition duration-500"
+            className="aspect-[4/3] rounded-2xl shadow-2xl object-cover object-[50%_30%] w-full max-w-sm sm:aspect-auto md:max-w-md lg:max-w-lg transform hover:scale-105 transition duration-500"
           />
         </div>
       </div>
