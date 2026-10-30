@@ -65,7 +65,7 @@ export default function RecentWork() {
         <Reveal delay={0.3} className="text-center mt-12">
           <Link
             href="/work"
-            className="inline-flex items-center border border-blue-600 text-blue-600 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300 whitespace-nowrap"
+            className="inline-flex items-center border border-blue-600 text-blue-600 px-6 min-h-11 rounded-full hover:bg-blue-600 hover:text-white transition duration-300 whitespace-nowrap"
           >
             View all projects
           </Link>

@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/80 backdrop-blur-xl">
       <nav aria-label="Main" className="container mx-auto flex items-center justify-between px-4 py-2 md:py-4">
-        <Link href="/" className="text-xl font-bold tracking-tight text-gray-900">
+        <Link href="/" className="inline-flex min-h-11 items-center text-xl font-bold tracking-tight text-gray-900">
           Sorelle<span className="text-blue-600">.</span>
         </Link>
 

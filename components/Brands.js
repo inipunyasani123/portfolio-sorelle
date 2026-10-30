@@ -33,7 +33,7 @@ export default function Brands() {
           >
             {projects.map((p) => (
               <li key={p.slug}>
-                <Link href={`/work/${p.slug}`} className="text-xl font-bold text-gray-700 transition hover:text-purple-700">
+                <Link href={`/work/${p.slug}`} className="inline-flex min-h-11 items-center text-xl font-bold text-gray-700 transition hover:text-purple-700">
                   {p.title}
                 </Link>
               </li>
