@@ -31,53 +31,39 @@
   </g>
   <path d="M 370 360 C 360 320 370 290 384 280 C 398 290 408 320 398 360 Z" fill="#c4b5fd"/>
   <path d="M 384 280 C 378 240 360 220 340 214 M 384 280 C 392 236 410 214 430 206" stroke="#16a34a" stroke-width="6" fill="none" stroke-linecap="round"/>
-  <!-- Sorelle -->
-  <g filter="url(#sa-sh)"><g transform="translate(600 680) scale(1.06)">
-  <g>
-    <!-- rambut belakang panjang bergelombang -->
-    <path d="M -146 -96 C -186 -20 -150 40 -180 110 C -206 170 -162 220 -196 284 C -214 320 -196 352 -232 372 C -170 392 -116 352 -96 300 C -70 334 -30 342 0 334 C 30 342 70 334 96 300 C 116 352 170 392 232 372 C 196 352 214 320 196 284 C 162 220 206 170 180 110 C 150 40 186 -20 146 -96 C 116 -206 -116 -206 -146 -96 Z" fill="url(#sa-hair)"/>
-    <!-- leher -->
-    <path d="M -50 100 L -54 236 Q 0 262 54 236 L 50 100 Z" fill="url(#sa-neck)"/>
-    <!-- atasan biru berkerah V + kardigan krem -->
-    <path d="M -58 206 C -146 228 -276 248 -336 300 C -400 356 -414 450 -424 820 L 424 820 C 414 450 400 356 336 300 C 276 248 146 228 58 206 Z" fill="url(#sa-top)"/>
-    <path d="M -58 206 L 0 330 L 58 206 Q 0 236 -58 206 Z" fill="url(#sa-neck)"/>
-    <path d="M -58 206 C -146 228 -276 248 -336 300 C -400 356 -414 450 -424 820 L -150 820 C -150 600 -120 420 -40 300 Z" fill="url(#sa-card)"/>
-    <path d="M 58 206 C 146 228 276 248 336 300 C 400 356 414 450 424 820 L 150 820 C 150 600 120 420 40 300 Z" fill="url(#sa-card)"/>
+  <!-- monitor: kanvas desain + kode -->
+  <g filter="url(#sa-sh)">
+    <rect x="560" y="520" width="560" height="400" rx="22" fill="#1e293b"/>
+    <rect x="576" y="536" width="528" height="360" rx="10" fill="#f8fafc"/>
+    <rect x="576" y="536" width="264" height="360" rx="10" fill="#eef2ff"/>
+    <rect x="600" y="566" width="216" height="120" rx="12" fill="#60a5fa"/>
+    <rect x="600" y="702" width="100" height="70" rx="10" fill="#fde68a"/>
+    <rect x="716" y="702" width="100" height="70" rx="10" fill="#fbcfe8"/>
+    <rect x="600" y="788" width="216" height="14" rx="7" fill="#c7d2fe"/>
+    <rect x="600" y="814" width="150" height="14" rx="7" fill="#c7d2fe"/>
+    <rect x="840" y="536" width="264" height="360" fill="#0f172a"/>
+    <g stroke-linecap="round" stroke-width="12"><path d="M 864 572 h 70" stroke="#c084fc"/><path d="M 950 572 h 90" stroke="#38bdf8"/><path d="M 880 606 h 120" stroke="#fbbf24"/><path d="M 880 640 h 60" stroke="#4ade80"/><path d="M 956 640 h 100" stroke="#94a3b8"/><path d="M 880 674 h 150" stroke="#38bdf8"/><path d="M 864 708 h 50" stroke="#c084fc"/><path d="M 930 708 h 110" stroke="#fbbf24"/><path d="M 880 742 h 90" stroke="#4ade80"/><path d="M 864 776 h 120" stroke="#94a3b8"/></g>
+    <path d="M 800 920 L 880 920 L 896 1020 L 784 1020 Z" fill="#cbd5e1"/>
+    <rect x="720" y="1016" width="240" height="22" rx="11" fill="#94a3b8"/>
+  </g>
+  <g filter="url(#sa-sh)"><g transform="translate(470 790) scale(.92)">
+<g>
+    <path d="M -58 206 C -146 228 -276 248 -336 300 C -400 356 -414 450 -424 820 L 424 820 C 414 450 400 356 336 300 C 276 248 146 228 58 206 Z" fill="url(#sa-card)"/>
     <path d="M 58 206 C 146 228 276 248 336 300 C 400 356 414 450 424 820 L 330 820 C 330 560 260 360 58 206 Z" fill="#d9cdbb" opacity=".55"/>
-    <circle cx="-118" cy="470" r="9" fill="#cbbba3"/><circle cx="-128" cy="560" r="9" fill="#cbbba3"/>
-    <!-- helai rambut yang jatuh di bahu -->
-    <path d="M -140 30 C -176 100 -136 160 -170 228 C -196 280 -170 330 -196 366 C -150 360 -126 320 -130 270 C -134 226 -112 190 -118 140 C -122 100 -110 60 -112 30 Z" fill="url(#sa-hair)"/>
-    <path d="M 140 30 C 176 100 136 160 170 228 C 196 280 170 330 196 366 C 150 360 126 320 130 270 C 134 226 112 190 118 140 C 122 100 110 60 112 30 Z" fill="url(#sa-hair)"/>
-    <!-- wajah -->
-    <path d="M 0 -196 C 84 -196 136 -136 136 -54 C 136 22 126 74 100 112 C 74 148 40 168 0 168 C -40 168 -74 148 -100 112 C -126 74 -136 22 -136 -54 C -136 -136 -84 -196 0 -196 Z" fill="url(#sa-skin)"/>
-    <g clip-path="url(#sa-face)">
-      <ellipse cx="-74" cy="60" rx="46" ry="30" fill="url(#sa-blush)"/>
-      <ellipse cx="78" cy="60" rx="46" ry="30" fill="url(#sa-blush)"/>
-    </g>
-    <!-- alis, mata berbulu mata, hidung, bibir -->
-    <path d="M -86 -50 C -70 -62 -48 -64 -32 -56" stroke="#3a2419" stroke-width="7.5" fill="none" stroke-linecap="round"/>
-    <path d="M 32 -56 C 48 -64 70 -62 86 -50" stroke="#3a2419" stroke-width="7.5" fill="none" stroke-linecap="round"/>
-    <path d="M -80 -6 C -68 -20 -46 -20 -34 -8 C -46 6 -68 6 -80 -6 Z" fill="#2a1a12"/>
-    <path d="M 34 -8 C 46 -20 68 -20 80 -6 C 68 6 46 6 34 -8 Z" fill="#2a1a12"/>
-    <path d="M -86 -4 C -72 -24 -44 -24 -30 -10 M 30 -10 C 44 -24 72 -24 86 -4" stroke="#2a1a12" stroke-width="6" fill="none" stroke-linecap="round"/>
-    <circle cx="-54" cy="-12" r="4" fill="#fff" opacity=".9"/><circle cx="62" cy="-12" r="4" fill="#fff" opacity=".9"/>
-    <path d="M 2 0 C 6 20 16 36 14 50 C 10 58 0 58 -8 54" stroke="#a46b47" stroke-width="7" fill="none" stroke-linecap="round"/>
-    <path d="M -36 86 C -20 86 -8 88 0 92 C 8 88 20 86 36 86 C 26 116 -26 116 -36 86 Z" fill="#c4645f"/>
-    <path d="M -36 86 C -14 100 14 100 36 86" stroke="#9c4744" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-    <path d="M -24 94 C -8 100 8 100 24 94 L 22 98 C 8 103 -8 103 -22 98 Z" fill="#fff" opacity=".9"/>
-    <!-- poni belah samping + jepit -->
-    <path d="M 30 -208 C -64 -208 -132 -150 -142 -58 C -146 -16 -140 22 -128 52 L -110 42 C -116 2 -112 -40 -96 -80 C -80 -110 -42 -130 10 -134 C 40 -136 72 -124 92 -104 C 108 -86 118 -64 120 -40 C 122 0 118 30 112 46 L 130 52 C 142 20 148 -20 146 -60 C 140 -150 100 -208 30 -208 Z" fill="url(#sa-hair)"/>
-    <path d="M -104 -130 C -60 -176 20 -190 84 -160" stroke="url(#sa-hairhi)" stroke-width="14" fill="none" stroke-linecap="round"/><path d="M -170 150 C -150 200 -180 240 -170 290" stroke="#8a5a3c" stroke-opacity=".45" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M 170 150 C 150 200 180 240 170 290" stroke="#8a5a3c" stroke-opacity=".3" stroke-width="10" fill="none" stroke-linecap="round"/>
-    <rect x="64" y="-150" width="58" height="17" rx="8.5" fill="#93c5fd" transform="rotate(32 93 -141)"/>
+    <path d="M -58 206 Q 0 238 58 206 L 52 232 Q 0 262 -52 232 Z" fill="url(#sa-top)"/>
+    <path d="M 0 262 L 0 820" stroke="#d9cdbb" stroke-width="5" opacity=".8"/>
+    <path d="M -146 -96 C -186 -20 -150 40 -180 110 C -206 170 -162 220 -196 284 C -214 320 -196 352 -232 372 C -170 392 -116 352 -96 300 C -70 334 -30 342 0 334 C 30 342 70 334 96 300 C 116 352 170 392 232 372 C 196 352 214 320 196 284 C 162 220 206 170 180 110 C 150 40 186 -20 146 -96 C 116 -206 -116 -206 -146 -96 Z" fill="url(#sa-hair)"/>
+    <path d="M 0 -200 C 90 -200 144 -138 144 -54 C 144 30 132 90 104 140 C 76 188 40 214 0 214 C -40 214 -76 188 -104 140 C -132 90 -144 30 -144 -54 C -144 -138 -90 -200 0 -200 Z" fill="url(#sa-hair)"/>
+    <path d="M -60 -170 C -20 -190 40 -186 84 -150" stroke="url(#sa-hairhi)" stroke-width="16" fill="none" stroke-linecap="round"/>
+    <path d="M -96 -60 C -70 40 -64 150 -40 250" stroke="#8a5a3c" stroke-opacity=".35" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M 100 -50 C 78 50 70 150 46 258" stroke="#8a5a3c" stroke-opacity=".3" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M 0 -196 C 4 -100 -6 20 0 120" stroke="#1d110b" stroke-opacity=".35" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <rect x="76" y="-120" width="58" height="17" rx="8.5" fill="#93c5fd" transform="rotate(24 105 -111)"/>
   </g></g></g>
   <!-- meja -->
   <rect x="0" y="1250" width="1200" height="250" fill="url(#sa-desk)"/>
   <rect x="0" y="1250" width="1200" height="10" fill="#f3ebe0"/>
   <g filter="url(#sa-sh)">
-    <!-- laptop -->
-    <path d="M 390 990 Q 390 974 406 974 L 794 974 Q 810 974 810 990 L 824 1248 L 376 1248 Z" fill="url(#sa-lid)"/>
-    <path d="M 340 1248 L 860 1248 L 876 1266 Q 600 1278 324 1266 Z" fill="#94a3b8"/>
-    <path d="M 586 1100 C 586 1086 600 1080 600 1092 C 600 1080 614 1086 614 1100 C 614 1112 600 1120 600 1124 C 600 1120 586 1112 586 1100 Z" fill="#93c5fd"/>
     <!-- tumpukan buku -->
     <rect x="70" y="1176" width="250" height="38" rx="8" fill="#a78bfa"/>
     <rect x="90" y="1138" width="220" height="38" rx="8" fill="#fbcfe8"/>

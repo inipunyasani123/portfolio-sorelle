@@ -35,9 +35,9 @@ Persona fiktif Sorelle, desainer UI/UX. Bersih dan terang dengan angka bernomor 
 ## Gambar & kredit
 
 - `public/images/work/*.webp` — mockup bingkai peramban + ponsel (tiga ponsel untuk halaman tautan dan undangan) berisi
-  tangkapan layar demo live di tabel atas, diambil 18 Okt 2026; bingkainya digambar dengan gaya situs ini.
+  tangkapan layar demo live di tabel atas, diambil ulang 30 Okt 2026, tanpa teks alamat; bingkainya digambar dengan gaya situs ini.
   `public/og/work/*.jpg` adalah versi 1200×630-nya untuk pratinjau tautan.
-- `public/images/hero.webp`, `public/images/about.webp` — ilustrasi potret persona fiktif Sorelle buatan sendiri
+- `public/images/hero.webp`, `public/images/about.webp` — ilustrasi persona fiktif Sorelle tampak belakang (tanpa wajah), buatan sendiri
   (gaya gradien lembut + blob pastel); sumber SVG-nya di `design/`. Bukan wajah orang sungguhan dan tidak memakai foto stok.
 - `public/og.jpg` — tangkapan beranda 1200×630.
 
